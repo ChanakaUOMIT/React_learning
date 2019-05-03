@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import HasChildren from './components/HasChildren/hasChildern';
 import ClassComponent from './components/HasChildren/classComponent';
 import Search from './components/Search/search';
+import Button from './components/Button/button';
 
 class App extends Component {
   render() {
@@ -21,6 +22,10 @@ class App extends Component {
         {/* <Greet/> */}
 
         <Search />
+        <Button type="success" />
+        <Button type="info" />
+        <Button type="danger" />
+
       </div>
     );
   }

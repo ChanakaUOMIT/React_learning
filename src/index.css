@@ -37,3 +37,26 @@ a{
   list-style-type: none;
   display: flex;
 }
+
+.btn{
+  padding: 15px;
+  margin: 10px;
+  background-color: #fff;
+  border:2px solid tomato;
+  cursor: pointer;
+}
+
+.btn.success{
+  background-color: green;
+  color: #fff;
+}
+
+.btn.info{
+  background-color: blue;
+  color: #fff;
+}
+
+.btn.danfer{
+  background-color: red;
+  color: #fff;
+}
