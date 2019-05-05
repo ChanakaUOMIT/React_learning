@@ -1,6 +1,7 @@
 import React , { Component } from 'react';
 
 class Search extends Component{
+    //Click Event
     handleClick(e){
         console.log(e);
         alert("Clicked...")

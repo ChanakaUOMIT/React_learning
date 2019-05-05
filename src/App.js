@@ -42,12 +42,12 @@ class App extends Component {
         
 
         <Search />
-        <Button type="success" />
+        {/* <Button type="success" />
         <Button type="info" />
         <Button type="danger" />
 
         <ComplexComponent.Paragraph></ComplexComponent.Paragraph>
-        <ComplexComponent.Heading />
+        <ComplexComponent.Heading /> */}
 
       </div>
     );
