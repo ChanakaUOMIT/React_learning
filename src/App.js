@@ -20,6 +20,33 @@ const B =(props)=>{
   )
 }
 class App extends Component {
+
+  constructor(props){ 
+    super(props);
+    this.state={
+      counter:0,
+    }
+
+    this.handleButtonClick=this.handleButtonClick.bind(this);
+  }
+
+  handleButtonClick(e, extra){
+  //   let count=this.state.counter;
+  //   count++;
+  //   console.log("from the app component");
+  //   this.setState({
+  //     counter:count,
+  //   })
+
+  console.log(extra);
+  this.setState((previousState)=>{
+    console.log(previousState)
+    return{
+      counter:previousState.counter+1,
+    }
+  })
+  }
+
   render() {
     let components={
       "A":A,
@@ -39,9 +66,11 @@ class App extends Component {
 
         {/* <Greet/> */}
 
+        <p>Button Clicks: {this.state.counter}</p>
+
         
 
-        <Search />
+        <Search handleButtonClick={this.handleButtonClick}/>
         {/* <Button type="success" />
         <Button type="info" />
         <Button type="danger" />

@@ -19,7 +19,11 @@ class Search extends Component{
                 //     alert("Clicked")
                 // }}
 
-                onClick={this.handleClick}
+                // onClick={this.handleClick}
+                onClick={(e) => {
+                    this.props.handleButtonClick(e, {age:25, name : "Chanaka"})
+                }}
+
                 > 
                 Click me</button>
             </div>
