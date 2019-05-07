@@ -8,6 +8,7 @@ import ClassComponent from './components/HasChildren/classComponent';
 import Search from './components/Search/search';
 import Button from './components/Button/button';
 import ComplexComponent from './components/ComplexComponent/complexComponent.';
+import Form from './components/Form/form';
 
 const A =(props)=>{
   return(
@@ -19,7 +20,7 @@ const B =(props)=>{
     <p>I'm component B</p>
   )
 }
-class App extends Component {
+ class App extends Component {
 
   constructor(props){ 
     super(props);
@@ -48,10 +49,10 @@ class App extends Component {
   }
 
   render() {
-    let components={
-      "A":A,
-      "B":B
-    }
+    // let components={
+    //   "A":A,
+    //   "B":B
+    // }
     // let componentToRender=components[this.props.type]
     return (
       // <componentToRender />
@@ -66,11 +67,13 @@ class App extends Component {
 
         {/* <Greet/> */}
 
-        <p>Button Clicks: {this.state.counter}</p>
+        {/* <p>Button Clicks: {this.state.counter}</p> */}
 
         
 
-        <Search handleButtonClick={this.handleButtonClick}/>
+        {/* <Search handleButtonClick={this.handleButtonClick}/> */}
+
+        <Form />
         {/* <Button type="success" />
         <Button type="info" />
         <Button type="danger" />
